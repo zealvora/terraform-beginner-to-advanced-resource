@@ -4,22 +4,18 @@ provider "aws" {
   secret_key = "PUT-YOUR-SECRET-KEY-HERE"
 }
 
-resource "aws_eip" "public_ip" {
-   vpc      = true
+resource "aws_eip" "lb" {
+  vpc      = true
 }
 
-#provider_property.user-defined-name.
-
-output "ec2_public_ip" {
-   value = "${aws_eip.public_ip.public_ip}"
+output "eip" {
+  value = aws_eip.lb
 }
 
-
-resource "aws_s3_bucket" "my_bucket" {
-  bucket = "terraform-test-kplabs-02"
+resource "aws_s3_bucket" "mys3" {
+  bucket = "kplabs-attribute-demo-001"
 }
 
-
-output "bucket_identifier" {
-  value = "${aws_s3_bucket.my_bucket.bucket_domain_name}"
+output "mys3bucket" {
+  value = aws_s3_bucket.mys3
 }
