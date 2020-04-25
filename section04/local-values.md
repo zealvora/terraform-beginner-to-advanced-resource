@@ -2,7 +2,7 @@
 
 ### local-values.tf
 
-
+```sh
 provider "aws" {
   region     = "ap-southeast-1"
   access_key = "YOUR-ACCESS-KEY"
@@ -32,3 +32,4 @@ resource "aws_ebs_volume" "db_ebs" {
   size              = 8
   tags = local.common_tags
 }
+```
