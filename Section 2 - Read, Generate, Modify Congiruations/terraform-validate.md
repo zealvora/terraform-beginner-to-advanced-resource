@@ -1,3 +1,4 @@
+```sh
 provider "aws" {
   region     = "us-west-2"
   access_key = "YOUR-ACCESS-KEY"
@@ -9,3 +10,10 @@ resource "aws_instance" "myec2" {
   instance_type = var.instancetype
   sky = "blue"
 }
+```
+
+### Command for Validating
+
+```sh
+terraform validate
+```
