@@ -20,6 +20,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 12 | [Debugging In Terraform][PlDk] |
 | 13 | [Terraform Format][PlDl] |
 | 14 | [Terraform Validate][PlDm] |
+| 15 | [Dynamic Blocks][PlDn] |
+
 
    [PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/attributes.tf>
    [PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/reference.tf>
@@ -34,6 +36,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDk]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/debugging.md>
 [PlDl]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/terraform-format.md>
 [PlDm]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read,%20Generate,%20Modify%20Congiruations/terraform-validate.md>
+[PlDn]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/dynamic-block.md>
+
 
 
 
