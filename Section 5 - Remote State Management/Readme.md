@@ -10,7 +10,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 1 | [Implementing S3 Backend][PlDa] |
 | 2 | [Importing Existing Resources with Terraform Import][PlDb] |
 | 3 | [Terraform State Management][PlDc] |
-| 4 | [Integrating with GIT for team management][PlDc] |
+| 4 | [Integrating with GIT for team management][PlDd] |
 
 
 
