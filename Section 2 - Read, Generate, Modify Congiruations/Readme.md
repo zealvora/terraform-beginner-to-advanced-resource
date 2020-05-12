@@ -22,6 +22,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 14 | [Terraform Validate][PlDm] |
 | 15 | [Load Order and Semantics][PlDn] |
 | 16 | [Dynamic Blocks][PlDo] |
+| 17 | [Tainting Resources][PlDp] |
 
 
    [PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/attributes.tf>
@@ -39,6 +40,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDm]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read,%20Generate,%20Modify%20Congiruations/terraform-validate.md>
 [PlDn]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/dynamic-block.md>
 [PlDo]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/load-order.md>
+[PlDp]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/taint.md>
+
 
 
 
