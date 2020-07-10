@@ -23,8 +23,10 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 15 | [Load Order and Semantics][PlDn] |
 | 16 | [Dynamic Blocks][PlDo] |
 | 17 | [Tainting Resources][PlDp] |
-
-
+| 18 | [Splat Expression][PlDq] |
+| 19 | [Terraform Graph][PlDr] |
+| 20 | [Saving Terraform Plan to File][PlDs] |
+ 
    [PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/attributes.tf>
    [PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/reference.tf>
    [PlDc]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/terraform-variables.md>
@@ -41,7 +43,9 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDn]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/dynamic-block.md>
 [PlDo]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/load-order.md>
 [PlDp]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/taint.md>
-
+[PlDq]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/splat-expression.md>
+[PlDr]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/graph.md>
+[PlDs]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/plan-to-file.md>
 
 
 
