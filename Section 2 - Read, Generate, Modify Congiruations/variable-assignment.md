@@ -45,5 +45,5 @@ setx TF_VAR_instancetype t2.large
 ### Linux / MAC Approach
 ```sh
 export TF_VAR_instancetype="t2.nano"
-echo $TF_VAR
+echo $TF_VAR_instancetype
 ```
