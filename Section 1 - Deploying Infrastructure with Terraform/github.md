@@ -1,6 +1,6 @@
 #### Pre-Requisite
 
-1. Make sure you create your GitHub account. 
+1. Make sure you create your GitHub account.
 2. Create Personal Access Token
 
 #### GitHub Provider Terraform:
