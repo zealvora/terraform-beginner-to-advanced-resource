@@ -28,6 +28,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 20 | [Saving Terraform Plan to File][PlDs] |
 | 21 | [Terraform Settings][PlDt] |
 | 22 | [Dealing with Large Infrastructure][PlDu] |
+| 23 | [Fetching Data for Maps and List in Variable][PlDv] |
 
    [PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/attributes.tf>
    [PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/reference.tf>
@@ -50,3 +51,4 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDs]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/plan-to-file.md>
 [PlDt]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/settings.md>
 [PlDu]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/large-infra.md>
+[PlDv]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/fetch-values-variables.tf>
