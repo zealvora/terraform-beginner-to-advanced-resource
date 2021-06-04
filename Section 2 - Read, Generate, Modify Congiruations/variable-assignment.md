@@ -10,7 +10,7 @@ provider "aws" {
 
 resource "aws_instance" "myec2" {
    ami = "ami-082b5a644766e0e6f"
-   instance_type = "t2.micro
+   instance_type = "t2.micro"
 }
 ```
 ### variables.tf
@@ -45,5 +45,5 @@ setx TF_VAR_instancetype t2.large
 ### Linux / MAC Approach
 ```sh
 export TF_VAR_instancetype="t2.nano"
-echo $TF_VAR
+echo $TF_VAR_instancetype
 ```
