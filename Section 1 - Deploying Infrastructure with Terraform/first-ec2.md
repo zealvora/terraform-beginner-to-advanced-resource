@@ -12,14 +12,32 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
 ```sh
 provider "aws" {
-  region     = "us-west-2"
-  access_key = "PUT-YOUR-ACCESS-KEY-HERE"
-  secret_key = "PUT-YOUR-SECRET-KEY-HERE"
+  region = "us-west-2" # Oregon
 }
 
-resource "aws_instance" "myec2" {
-   ami = "ami-082b5a644766e0e6f"
-   instance_type = "t2.micro"
+data "aws_ami" "ubuntu" {
+  most_recent = true
+
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+  }
+
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+
+  owners = ["099720109477"] # Canonical
+}
+
+resource "aws_instance" "server0" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "Section 1 - Deploying Infrastructure with Terraform"
+  }
 }
 ```
 ### Commands:
