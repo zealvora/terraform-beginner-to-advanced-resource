@@ -10,25 +10,24 @@ https://registry.terraform.io/providers/integrations/github/latest/docs
 Code Used:
 
 ```sh
-
 terraform {
   required_providers {
     github = {
-      source = "integrations/github"
+      source  = "integrations/github"
       version = "4.3.2"
     }
   }
 }
 
 provider "github" {
-  token = "8c6f0e838e998844a8bb32b0050a7dee6a31a4df"
+  token = "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"
 }
 
-resource "github_repository" "example" {
-  name        = "terraform-repo"
+resource "github_repository" "terraform" {
+  name        = "devsecops-terraform-github_repository"
+  description = "My awesome devsecops codebase"
 
-  visibility  = "private"
-
+  visibility = "private"
 }
 ```
 #### Initialize and Apply:
