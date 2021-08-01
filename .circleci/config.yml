@@ -11,7 +11,7 @@ jobs:
           name: terraform init & plan
           command: |
             terraform init -input=false
-            terraform plan -out 
+            terraform plan 
       - persist_to_workspace:
           root: .
           paths:
