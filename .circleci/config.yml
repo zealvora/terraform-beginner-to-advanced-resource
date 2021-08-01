@@ -1,0 +1,94 @@
+version: 2
+
+
+
+jobs:
+
+  plan-apply:
+
+    working_directory: /tmp/project
+
+    docker:
+
+      - image: docker.mirror.hashicorp.services/hashicorp/terraform:light
+
+    steps:
+
+      - checkout
+
+      - run:
+
+          name: terraform init & plan
+
+          command: |
+
+            terraform init -input=false
+
+            terraform plan -out tfapply -var-file variables.tfvars
+
+      - persist_to_workspace:
+
+          root: .
+
+          paths:
+
+            - .
+
+
+
+  apply:
+
+    docker:
+
+      - image: docker.mirror.hashicorp.services/hashicorp/terraform:light
+
+    steps:
+
+      - attach_workspace:
+
+          at: .
+
+      - run:
+
+          name: terraform
+
+          command: |
+
+            terraform apply -auto-approve tfapply
+
+      - persist_to_workspace:
+
+          root: .
+
+          paths:
+
+            - .
+
+
+
+  plan-destroy:
+
+    docker:
+
+      - image: docker.mirror.hashicorp.services/hashicorp/terraform:light
+
+    steps:
+
+      - attach_workspace:
+
+          at: .
+
+      - run:
+
+          name: terraform create destroy plan
+
+          command: |
+
+            terraform plan -destroy -out tfdestroy -var-file variables.tfvars
+
+      - persist_to_workspace:
+
+          root: .
+
+          paths:
+
