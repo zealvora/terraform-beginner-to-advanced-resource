@@ -1,16 +1,15 @@
 ### Important Note
 
-Note that every region has a different AMI ID. The AMI ID's keeps on changing so make sure you use the latest AMI ID from the AWS console similar to the way it is shown in the video.
+# Note that every region has a different AMI ID. The AMI ID's keeps on changing so make sure you use the latest AMI ID from the AWS console similar to the way it is shown in the video.
 
 ### Documentation Referred:
 
-https://registry.terraform.io/
+# https://registry.terraform.io/
 
-https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
 ### first_ec2.tf
-
-```sh
+# Configure the AWS Provider
 provider "aws" {
   region = "us-west-2" # Oregon
 }
@@ -39,11 +38,3 @@ resource "aws_instance" "server0" {
     Name = "Section 1 - Deploying Infrastructure with Terraform"
   }
 }
-```
-### Commands:
-
-```sh
-terraform init
-terraform plan
-terraform apply
-```
