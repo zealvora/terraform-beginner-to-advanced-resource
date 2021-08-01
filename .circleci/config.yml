@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+    terraform: circleci/terraform@2.1.0
 
 jobs:
   plan-apply:
