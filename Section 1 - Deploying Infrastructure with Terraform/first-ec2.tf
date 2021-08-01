@@ -49,5 +49,5 @@ resource "aws_instance" "server0" {
   tags = {
     Name = "Section 1 - Deploying Infrastructure with Terraform"
   }
-  user_data = filebase64("${path.module}/example.sh")
+  # user_data = filebase64("${path.module}/example.sh")
 }
