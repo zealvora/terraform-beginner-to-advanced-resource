@@ -11,13 +11,12 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
    first_ec2.tf
    Configure the AWS Provider
-
+*/
 
 provider "aws" {
   region = "us-west-2" # Oregon
 }
 
-*/
 
 data "aws_ami" "ubuntu" {
   most_recent = true
