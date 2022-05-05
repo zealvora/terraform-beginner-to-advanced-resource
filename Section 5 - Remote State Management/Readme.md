@@ -13,7 +13,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 3 | [Module Sources in Terraform][PlDf] |
 | 4 | [Terraform and .gitignore][PlDg] |
 | 5 | [Implementing S3 Backend][PlDb] |
-| 6 | [State Locking][PlDb] |
+| 6 | [State Locking][PlDi] |
 | 7 | [Integrating DynamoDB with S3 for state locking][PlDh] |
 | 8 | [Terraform State Management][PlDd] | |
 | 9 | [Importing Existing Resources with Terraform Import][PlDc]
