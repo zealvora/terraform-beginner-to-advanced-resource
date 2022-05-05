@@ -1,20 +1,24 @@
 # Domain - Remote State Management
 
-The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2020 video course.
+The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2022 video course.
 
 
 ### Video-Document Mapper
 
+
 | Sr No | Document Link |
 | ------ | ------ |
+| 1 | [Integrating with GIT for team management][PlDe] |
+| 2 | [Security Challenges in Commiting TFState to GIT][PlDa] |
+| 3 | [Module Sources in Terraform][PlDf] |
+| 4 | [Terraform and .gitignore][PlDg] |
+| 5 | [Implementing S3 Backend][PlDb] |
+| 6 | [State Locking][PlDb] |
+| 7 | [Integrating DynamoDB with S3 for state locking][PlDh] |
+| 8 | [Terraform State Management][PlDd] | |
+| 9 | [Importing Existing Resources with Terraform Import][PlDc]
 
-| 1 | [Security Challenges in Commiting TFState to GIT][PlDa] |
-| 2 | [Implementing S3 Backend][PlDb] |
-| 3 | [Importing Existing Resources with Terraform Import][PlDc] |
-| 4 | [Terraform State Management][PlDd] |
-| 5 | [Integrating with GIT for team management][PlDe] |
-| 6 | [Module Sources in Terraform][PlDf] |
-| 7 | [Terraform and .gitignore][PlDg] |
+
 
 
    [PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/tree/master/Section%205%20-%20Remote%20State%20Management/myrepo>
@@ -24,3 +28,5 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDe]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%205%20-%20Remote%20State%20Management/git-integration.md>   
   [PlDf]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%205%20-%20Remote%20State%20Management/demofile.md>
   [PlDg]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%205%20-%20Remote%20State%20Management/tf-gitignore.md>
+  [PlDh]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%205%20-%20Remote%20State%20Management/s3-state-lock.tf>
+  [PlDi]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%205%20-%20Remote%20State%20Management/sleep.tf>

@@ -1,6 +1,6 @@
 # Domain  - Security Primer
 
-The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2020 video course.
+The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2022 video course.
 
 
 # Video-Document Mapper
@@ -20,4 +20,3 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%206%20-%20Security%20Primer/multiple-providers.md>
    [PlDc]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%206%20-%20Security%20Primer/sensitive.tf>
    [PlDd]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%206%20-%20Security%20Primer/tfstate-git.md>
-
