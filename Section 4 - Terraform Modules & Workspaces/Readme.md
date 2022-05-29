@@ -11,7 +11,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 2 | [Terraform Registry][PlDb] |
 | 3 | [Using Locals with Modules][PlDd] |
 | 4 | [Referencing Module Outputs][PlDe] |
-| 3 | [Implementing Terraform Workspace][PlDc] |
+| 5 | [Implementing Terraform Workspace][PlDc] |
 
 
 
