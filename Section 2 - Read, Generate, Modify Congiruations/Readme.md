@@ -31,14 +31,15 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 23 | [Fetching Data for Maps and List in Variable][PlDv] |
 | 24 | [Zipmap Function][PlDw] |
 | 25 | [Comments in Terraform][PlDx] |
-   [PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/attributes.tf>
-   [PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/reference.tf>
-   [PlDc]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/terraform-variables.md>
-   [PlDd]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/variable-assignment.md>
-   [PlDe]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/data-types.md>
-   [PlDf]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/counte-parameter.md>
-   [PlDg]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/conditional.md>
-    [PlDh]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/local-values.md>
+
+[PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/attributes.tf>
+[PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/reference.tf>
+[PlDc]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/terraform-variables.md>
+[PlDd]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/variable-assignment.md>
+[PlDe]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/data-types.md>
+[PlDf]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/counte-parameter.md>
+[PlDg]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/conditional.md>
+[PlDh]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/local-values.md>
 [PlDi]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/functions.md>
 [PlDj]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/data-sources.md>
 [PlDk]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/debugging.md>
