@@ -1,31 +1,40 @@
-### iam.tf
+### Documentation Referred:
 
+https://www.terraform.io/language/settings/backends/remote
+
+### remote-backend.tf
 ```sh
 terraform {
-  required_version = "~> 0.12.0"
+  cloud {
+    organization = "mykplabs-org"
 
-  backend "remote" {}
-}
-
-resource "aws_iam_user" "lb" {
-  name = "remoteuser"
-  path = "/system/"
+    workspaces {
+      name = "remote-operation"
+    }
+  }
 }
 ```
 
-### backend.hcl
+### iam.tf
+
 ```sh
-workspaces { name = "kplabs-remote-backend" }
-hostname     = "app.terraform.io"
-organization = "demo-kplabs-org"
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "YOUR-ACCESS-KEY"
+  secret_key = "YOUR-SECRET-KEY"
+}
+
+resource "aws_iam_user" "lb" {
+  name = "loadbalancer"
+  path = "/system/"
+}
 ```
 
 ### CLI Commands used
 ```sh
 terraform login
-terraform init -backend-config=backend.hcl
+terraform init
+terraform plan
+terraform apply -auto-approve
+terraform destroy -auto-approve
 ```
-
-### Documentation Referred:
-
-https://www.terraform.io/docs/backends/types/remote.html
