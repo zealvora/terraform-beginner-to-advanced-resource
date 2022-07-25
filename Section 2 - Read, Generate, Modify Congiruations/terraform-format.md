@@ -1,5 +1,5 @@
 
-### test.fmt.tf
+### test-fmt.tf
 
 ```sh
 provider "aws" {
