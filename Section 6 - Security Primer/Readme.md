@@ -15,8 +15,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 
 
 
-   [PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%206%20-%20Security%20Primer/credentials.md>
-   [PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%206%20-%20Security%20Primer/multiple-providers.md>
-   [PlDc]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%206%20-%20Security%20Primer/sensitive.tf>
-   [PlDd]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%206%20-%20Security%20Primer/tfstate-git.md>
-   [PlDe]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%206%20-%20Security%20Primer/vault.tf>
+   [PlDa]: <./credentials.md>
+   [PlDb]: <./multiple-providers.md>
+   [PlDc]: <./sensitive.tf>
+   [PlDd]: <./tfstate-git.md>
+   [PlDe]: <./vault.tf>

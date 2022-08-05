@@ -13,8 +13,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 4 | [Failure Behavior for Provisioners][PlDd] |
 | 5 | [Null Resource][PlDe] |
 
-[PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%203%20-%20Terraform%20Provisioners/remote-exec.md>
-[PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%203%20-%20Terraform%20Provisioners/local-exec.tf>
-[PlDc]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%203%20-%20Terraform%20Provisioners/provisioner-types.md>
-[PlDd]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%203%20-%20Terraform%20Provisioners/failure-behavior.md>
-[PlDe]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%203%20-%20Terraform%20Provisioners/null.md>
+[PlDa]: <./remote-exec.md>
+[PlDb]: <./local-exec.tf>
+[PlDc]: <./provisioner-types.md>
+[PlDd]: <./failure-behavior.md>
+[PlDe]: <./null.md>

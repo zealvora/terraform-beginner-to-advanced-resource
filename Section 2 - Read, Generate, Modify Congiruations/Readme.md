@@ -13,46 +13,50 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 4 | [Approaches for Variable Assignment][PlDd] |
 | 5 | [Data Types for Variables][PlDe] |
 | 6 | [Count and Count Index][PlDf] |
-| 8 | [Conditional Expressions][PlDg] |
-| 9 | [Local Values][PlDh] |
-| 10 | [Terraform Functions][PlDi] |
-| 11 | [Data Sources][PlDj] |
-| 12 | [Debugging In Terraform][PlDk] |
-| 13 | [Terraform Format][PlDl] |
-| 14 | [Terraform Validate][PlDm] |
-| 15 | [Load Order and Semantics][PlDn] |
-| 16 | [Dynamic Blocks][PlDo] |
-| 17 | [Tainting Resources][PlDp] |
-| 18 | [Splat Expression][PlDq] |
-| 19 | [Terraform Graph][PlDr] |
-| 20 | [Saving Terraform Plan to File][PlDs] |
-| 21 | [Terraform Settings][PlDt] |
-| 22 | [Dealing with Large Infrastructure][PlDu] |
-| 23 | [Fetching Data for Maps and List in Variable][PlDv] |
-| 24 | [Zipmap Function][PlDw] |
-| 25 | [Comments in Terraform][PlDx] |
+| 7 | [Conditional Expressions][PlDg] |
+| 8 | [Local Values][PlDh] |
+| 9 | [Terraform Functions][PlDi] |
+| 10 | [Data Sources][PlDj] |
+| 11 | [Debugging In Terraform][PlDk] |
+| 12 | [Terraform Format][PlDl] |
+| 13 | [Terraform Validate][PlDm] |
+| 14 | [Load Order and Semantics][PlDn] |
+| 15 | [Dynamic Blocks][PlDo] |
+| 16 | [Tainting Resources][PlDp] |
+| 17 | [Splat Expression][PlDq] |
+| 18 | [Terraform Graph][PlDr] |
+| 19 | [Saving Terraform Plan to File][PlDs] |
+| 20 | [Terraform Settings][PlDt] |
+| 21 | [Dealing with Large Infrastructure][PlDu] |
+| 22 | [Fetching Data for Maps and List in Variable][PlDv] |
+| 23 | [Zipmap Function][PlDw] |
+| 24 | [Comments in Terraform][PlDx] |
+| 25 | [Challenges with Count][PlDy] |
+| 26 | [for_each in Terraform][PlDz] |
 
-[PlDa]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/attributes.tf>
-[PlDb]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/reference.tf>
-[PlDc]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/terraform-variables.md>
-[PlDd]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/variable-assignment.md>
-[PlDe]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/data-types.md>
-[PlDf]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/counte-parameter.md>
-[PlDg]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/conditional.md>
-[PlDh]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/local-values.md>
-[PlDi]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/functions.md>
-[PlDj]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/data-sources.md>
-[PlDk]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/debugging.md>
-[PlDl]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/terraform-format.md>
-[PlDm]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read,%20Generate,%20Modify%20Congiruations/terraform-validate.md>
-[PlDo]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/dynamic-block.md>
-[PlDn]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/load-order.md>
-[PlDp]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/taint.md>
-[PlDq]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/splat-expression.md>
-[PlDr]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/graph.md>
-[PlDs]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/plan-to-file.md>
-[PlDt]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/settings.md>
-[PlDu]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/large-infra.md>
-[PlDv]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/fetch-values-variables.tf>
-[PlDw]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/zipmap.tf>
-[PlDx]: <https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/Section%202%20-%20Read%2C%20Generate%2C%20Modify%20Congiruations/tf-comments.tf>
+[PlDa]: <./attributes.tf>
+[PlDb]: <./reference.tf>
+[PlDc]: <./terraform-variables.md>
+[PlDd]: <./variable-assignment.md>
+[PlDe]: <./data-types.md>
+[PlDf]: <./counte-parameter.md>
+[PlDg]: <./conditional.md>
+[PlDh]: <./local-values.md>
+[PlDi]: <./functions.md>
+[PlDj]: <./data-sources.md>
+[PlDk]: <./debugging.md>
+[PlDl]: <./terraform-format.md>
+[PlDm]: <./terraform-validate.md>
+[PlDo]: <./dynamic-block.md>
+[PlDn]: <./load-order.md>
+[PlDp]: <./taint.md>
+[PlDq]: <./splat-expression.md>
+[PlDr]: <./graph.md>
+[PlDs]: <./plan-to-file.md>
+[PlDt]: <./settings.md>
+[PlDu]: <./large-infra.md>
+[PlDv]: <./fetch-values-variables.tf>
+[PlDw]: <./zipmap.tf>
+[PlDx]: <./tf-comments.tf>
+[PlDy]: <./challenge-count.md>
+[PlDz]: <./for_each.md>
