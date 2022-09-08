@@ -19,7 +19,6 @@ Intermediate Solution to Resolve the Error:
 <p align="center">
   <img src="https://i.ibb.co/FD2qVfq/vpc-console.png">
 </p>
-![Alt text](./vpc-console.jpg?raw=true "Title")
 
 3. There should be 1 default VPC with no name. Copy the VPC ID of this VPC.
 
@@ -34,7 +33,8 @@ Intermediate Solution to Resolve the Error:
   <img src="https://i.ibb.co/gFvfgft/add-vpc-id.png">
 </p>
 
-Here is a sample reference:
+Here is a sample code reference:
+
 ```sh
 resource "aws_security_group" "allow_tls" {
   name        = "kplabs-security-group"
