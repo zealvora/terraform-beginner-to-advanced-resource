@@ -35,7 +35,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 26 | [for_each in Terraform][PlDz] |
 
 [PlDa]: <./attributes.tf>
-[PlDb]: <./reference.tf>
+[PlDb]: <./reference.md>
 [PlDc]: <./terraform-variables.md>
 [PlDd]: <./variable-assignment.md>
 [PlDe]: <./data-types.md>
