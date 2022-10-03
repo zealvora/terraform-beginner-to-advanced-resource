@@ -1,39 +1,29 @@
-#### Pre-Requisite
+/*
+Pre-Requisites
 
-1. Make sure you create your GitHub account.
-2. Create Personal Access Token
+ 1. Make sure you create your GitHub account.
+ 2. Create Personal Access Token
 
-#### GitHub Provider Terraform:
-
-https://registry.terraform.io/providers/integrations/github/latest/docs
-
-Code Used:
-
-```sh
+ GitHub Provider Terraform:
+ https://registry.terraform.io/providers/integrations/github/latest/docs
+*/
 
 terraform {
   required_providers {
     github = {
-      source = "integrations/github"
+      source  = "integrations/github"
       version = "4.3.2"
     }
   }
 }
 
 provider "github" {
-  token = "8c6f0e838e998844a8bb32b0050a7dee6a31a4df"
+  token = "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"
 }
 
-resource "github_repository" "example" {
-  name        = "terraform-repo"
+resource "github_repository" "terraform" {
+  name        = "devsecops-terraform-github_repository"
+  description = "My awesome devsecops codebase"
 
-  visibility  = "private"
-
+  visibility = "private"
 }
-```
-#### Initialize and Apply:
-```sh
-terraform init
-terraform plan
-terraform apply
-```
