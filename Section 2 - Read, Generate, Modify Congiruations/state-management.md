@@ -22,7 +22,7 @@ terraform {
   backend "s3" {
     bucket = "kplabs-remote-backends"
     key    = "demo.tfstate"
-    region = "us-east-1"
+    region = "ap-south-1"
     access_key = "YOUR-ACCESS-KEY"
     secret_key = "YOUR-SECRET-KEY"
   }
