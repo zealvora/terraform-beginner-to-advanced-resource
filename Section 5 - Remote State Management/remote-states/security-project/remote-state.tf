@@ -4,6 +4,6 @@ data "terraform_remote_state" "eip" {
   config = {
     bucket = "kplabs-terraform-backend"
     key    = "network/eip.tfstate"
-    region = "us-east-1"
+    region = "ap-south-1"
     }
   }
