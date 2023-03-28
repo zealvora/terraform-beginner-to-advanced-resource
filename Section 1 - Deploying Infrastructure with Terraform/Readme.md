@@ -12,7 +12,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 3 | [Provider Tiers][PlDc] |
 | 4 | [Create GitHub Repository through Terraform][PlDd] |
 | 5 | [Terraform Destroy][PlDe] |
-| 6 | [Terraform Provider Versioning][PlDe] |
+| 6 | [Terraform Provider Versioning][PlDf] |
 
 
 
@@ -20,5 +20,5 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDb]: <./resource-providers.md>   
    [PlDc]: <./provider-tiers.md>
    [PlDd]: <./github.md>
-   [PlDd]: <./destroy.md>   
-   [PlDe]: <./provider-versioning.md>
+   [PlDe]: <./destroy.md>   
+   [PlDf]: <./provider-versioning.md>
