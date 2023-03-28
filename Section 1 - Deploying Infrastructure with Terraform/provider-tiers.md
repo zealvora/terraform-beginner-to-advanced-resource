@@ -1,10 +1,11 @@
-### Documentation Referred:
 
-https://registry.terraform.io/
+### Digital Ocean Provider (Partner Tier)
 
-https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs
+
 
 ### first_ec2.tf
+
 
 ```sh
 provider "aws" {
@@ -17,12 +18,14 @@ resource "aws_instance" "myec2" {
     ami = "ami-00c39f71452c08778"
     instance_type = "t2.micro"
 }
-```
 
-### Commands:
+terraform {
+  required_providers {
+    digitalocean = {
+      source = "digitalocean/digitalocean"
+      version = "~> 2.0"
+    }
+  }
+}
 
-```sh
-terraform init
-terraform plan
-terraform apply
 ```

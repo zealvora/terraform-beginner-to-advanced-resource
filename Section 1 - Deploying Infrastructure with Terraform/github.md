@@ -1,7 +1,3 @@
-#### Pre-Requisite
-
-1. Make sure you create your GitHub account.
-2. Create Personal Access Token
 
 #### GitHub Provider Terraform:
 
@@ -14,20 +10,21 @@ Code Used:
 terraform {
   required_providers {
     github = {
-      source = "integrations/github"
-      version = "4.3.2"
+      source  = "integrations/github"
+      version = "~> 5.0"
     }
   }
 }
 
 provider "github" {
-  token = "8c6f0e838e998844a8bb32b0050a7dee6a31a4df"
+  token = "your-token-here"
 }
 
 resource "github_repository" "example" {
-  name        = "terraform-repo"
+  name        = "example"
+  description = "My awesome codebase"
 
-  visibility  = "private"
+  visibility = "public"
 
 }
 ```

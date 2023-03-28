@@ -1,9 +1,3 @@
-### Documentation Referred:
-
-https://registry.terraform.io/
-
-https://registry.terraform.io/providers/hashicorp/aws/latest/docs
-
 ### first_ec2.tf
 
 ```sh
@@ -17,12 +11,11 @@ resource "aws_instance" "myec2" {
     ami = "ami-00c39f71452c08778"
     instance_type = "t2.micro"
 }
-```
 
-### Commands:
+resource "aws_instance" "myec2" {
+    ami = "ami-123"
+    instance_type = "t3.micro"
+}
 
-```sh
-terraform init
-terraform plan
-terraform apply
+provider azurerm {}
 ```
