@@ -13,7 +13,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 4 | [Create GitHub Repository through Terraform][PlDd] |
 | 5 | [Terraform Destroy][PlDe] |
 | 6 | [Terraform Provider Versioning][PlDf] |
-
+| 7 | [Terraform Refresh][PlDg] |
 
 
    [PlDa]: <./first-ec2.md>
@@ -22,3 +22,4 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDd]: <./github.md>
    [PlDe]: <./destroy.md>   
    [PlDf]: <./provider-versioning.md>
+   [PlDg]: <./refresh.tf>

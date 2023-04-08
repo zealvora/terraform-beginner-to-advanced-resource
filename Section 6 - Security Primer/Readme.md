@@ -12,6 +12,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 3 | [Sensitive Parameter][PlDc] |
 | 4 |[Security Challenges in Commiting TFState to GIT][PlDd] |
 | 5 |[Terraform and Vault Integration][PlDe] |
+| 6 |[Dependency Lock File][PlDf] |
 
 
 
@@ -20,3 +21,4 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDc]: <./sensitive.tf>
    [PlDd]: <./tfstate-git.md>
    [PlDe]: <./vault.tf>
+   [PlDf]: <./dependency-lock.tf>
