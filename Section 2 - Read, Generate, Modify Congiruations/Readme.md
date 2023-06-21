@@ -1,6 +1,6 @@
 # Domain 4 - Read, Generate, Modify Configurations
 
-The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2022 video course.
+The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2023 video course.
 
 
 # Video-Document Mapper
