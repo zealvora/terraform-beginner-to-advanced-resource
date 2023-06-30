@@ -14,6 +14,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 5 | [Terraform Destroy][PlDe] |
 | 6 | [Terraform Provider Versioning][PlDf] |
 | 7 | [Terraform Refresh][PlDg] |
+| 8 | [AWS Provider - Authentication Configuration][PlDh] |
 
 
    [PlDa]: <./first-ec2.md>
@@ -23,3 +24,4 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDe]: <./destroy.md>   
    [PlDf]: <./provider-versioning.md>
    [PlDg]: <./refresh.tf>
+   [PlDh]: <./aws-provider-auth.md>

@@ -7,8 +7,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 
 | Sr No | Document Link |
 | ------ | ------ |
-| 1 | [Understanding Attributes and Output Values in Terraform][PlDa] |
-| 2 | [Referencing Cross-Account Resource Attributes][PlDb] |
+| 1 | [Cross Reference Resource Attributes Practical][PlDa] |
+| 2 | [Output Values][PlDb] |
 | 3 | [Terraform Variables][PlDc] |
 | 4 | [Approaches for Variable Assignment][PlDd] |
 | 5 | [Data Types for Variables][PlDe] |
@@ -34,8 +34,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 25 | [Challenges with Count][PlDy] |
 | 26 | [for_each in Terraform][PlDz] |
 
-[PlDa]: <./attributes.tf>
-[PlDb]: <./reference.md>
+[PlDa]: <./cross-reference-attributes.md>
+[PlDb]: <./output-values.md>
 [PlDc]: <./terraform-variables.md>
 [PlDd]: <./variable-assignment.md>
 [PlDe]: <./data-types.md>
