@@ -11,10 +11,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 2 | [Implementing local-exec provisioners][PlDb] |
 | 3 | [Creation-Time & Destroy-Time Provisioners][PlDc] |
 | 4 | [Failure Behavior for Provisioners][PlDd] |
-| 5 | [Null Resource][PlDe] |
 
 [PlDa]: <./remote-exec.md>
 [PlDb]: <./local-exec.tf>
 [PlDc]: <./provisioner-types.md>
 [PlDd]: <./failure-behavior.md>
-[PlDe]: <./null.md>

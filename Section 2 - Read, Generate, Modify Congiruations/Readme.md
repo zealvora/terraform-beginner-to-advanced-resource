@@ -31,8 +31,12 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 22 | [Fetching Data for Maps and List in Variable][PlDv] |
 | 23 | [Zipmap Function][PlDw] |
 | 24 | [Comments in Terraform][PlDx] |
-| 25 | [Challenges with Count][PlDy] |
-| 26 | [for_each in Terraform][PlDz] |
+| 25 | [Resource Behavior and Meta Arguments][PlDy] |
+| 26 | [LifeCycle Meta-Argument - Create Before Destroy][PlDz] |
+| 27 | [LifeCycle Meta-Argument - Prevent Destroy][PlEa] |
+| 28 | [LifeCycle Meta-Argument - Ignore Changes][PlEb] |
+| 29 | [Challenges with Count][PlEc] |
+| 30 | [for_each in Terraform][PlEd] |
 
 [PlDa]: <./cross-reference-attributes.md>
 [PlDb]: <./output-values.md>
@@ -58,5 +62,9 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDv]: <./fetch-values-variables.tf>
 [PlDw]: <./zipmap.tf>
 [PlDx]: <./tf-comments.tf>
-[PlDy]: <./challenge-count.md>
-[PlDz]: <./for_each.md>
+[PlDy]: <./meta-argument.md>
+[PlDz]: <./create-before-destroy.md>
+[PlEa]: <./prevent-destroy.md>
+[PlEb]: <./ignore-changes.md>
+[PlEc]: <./challenge-count.md>
+[PlEd]: <./for_each.md>
