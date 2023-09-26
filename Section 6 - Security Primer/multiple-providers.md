@@ -5,7 +5,7 @@ resource "aws_eip" "myeip" {
 }
 
 resource "aws_eip" "myeip01" {
-  vpc = "true"
+  domain = "vpc"
   provider = "aws.aws02"
 }
 ```
