@@ -56,7 +56,7 @@ echo %TF_VAR_instancetype
 ### Linux / MAC specific commands
 
 ```sh
-export TF_VAR_instancetype t2.nano
+export TF_VAR_instancetype=t2.nano
 echo TF_VAR_instancetype
 ```
 
