@@ -2,7 +2,7 @@
 
 https://registry.terraform.io/providers/hashicorp/aws/2.42.0/docs/resources/eip
 
-https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
+https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/security_group
 
 ### reference-attributes.tf
 
