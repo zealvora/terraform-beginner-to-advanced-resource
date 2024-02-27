@@ -13,34 +13,37 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 4 | [Basic of Attributes][PlDa4] |
 | 5 | [Cross Reference Resource Attributes Practical][PlDa] |
 | 6 | [Output Values][PlDb] |
-| 7 | [Terraform Variables][PlDc] |
+| 7 | [Terraform Variables Practical][PlDc] |
+| 7 | [Variable Definitions File (TFVARS)][PlDc2] |
 | 8 | [Approaches for Variable Assignment][PlDd] |
-| 9 | [Data Types for Variables][PlDe] |
-| 10 | [Count and Count Index][PlDf] |
-| 11 | [Conditional Expressions][PlDg] |
-| 12 | [Local Values][PlDh] |
-| 13 | [Terraform Functions][PlDi] |
-| 14 | [Data Sources][PlDj] |
-| 15 | [Debugging In Terraform][PlDk] |
-| 16 | [Terraform Format][PlDl] |
-| 17 | [Terraform Validate][PlDm] |
-| 18 | [Load Order and Semantics][PlDn] |
-| 19 | [Dynamic Blocks][PlDo] |
-| 20 | [Tainting Resources][PlDp] |
-| 21 | [Splat Expression][PlDq] |
-| 22 | [Terraform Graph][PlDr] |
-| 23 | [Saving Terraform Plan to File][PlDs] |
-| 24 | [Terraform Settings][PlDt] |
-| 25 | [Dealing with Large Infrastructure][PlDu] |
-| 26 | [Fetching Data for Maps and List in Variable][PlDv] |
-| 27 | [Zipmap Function][PlDw] |
-| 28 | [Comments in Terraform][PlDx] |
-| 29 | [Resource Behavior and Meta Arguments][PlDy] |
-| 30 | [LifeCycle Meta-Argument - Create Before Destroy][PlDz] |
-| 31 | [LifeCycle Meta-Argument - Prevent Destroy][PlEa] |
-| 32 | [LifeCycle Meta-Argument - Ignore Changes][PlEb] |
-| 33 | [Challenges with Count][PlEc] |
-| 34 | [for_each in Terraform][PlEd] |
+| 10 | [Setting Environment variable in Linux][PlDd] |
+| 11 | [Variable Definition Precedence][PlDd] |
+| 12 | [Data Types for Variables][PlDe] |
+| 13 | [Count and Count Index][PlDf] |
+| 14 | [Conditional Expressions][PlDg] |
+| 15 | [Local Values][PlDh] |
+| 16 | [Terraform Functions][PlDi] |
+| 17 | [Data Sources][PlDj] |
+| 18 | [Debugging In Terraform][PlDk] |
+| 19 | [Terraform Format][PlDl] |
+| 20 | [Terraform Validate][PlDm] |
+| 21 | [Load Order and Semantics][PlDn] |
+| 22 | [Dynamic Blocks][PlDo] |
+| 23 | [Tainting Resources][PlDp] |
+| 24 | [Splat Expression][PlDq] |
+| 25 | [Terraform Graph][PlDr] |
+| 26 | [Saving Terraform Plan to File][PlDs] |
+| 27 | [Terraform Settings][PlDt] |
+| 28 | [Dealing with Large Infrastructure][PlDu] |
+| 29 | [Fetching Data for Maps and List in Variable][PlDv] |
+| 30 | [Zipmap Function][PlDw] |
+| 31 | [Comments in Terraform][PlDx] |
+| 32 | [Resource Behavior and Meta Arguments][PlDy] |
+| 33 | [LifeCycle Meta-Argument - Create Before Destroy][PlDz] |
+| 34 | [LifeCycle Meta-Argument - Prevent Destroy][PlEa] |
+| 35 | [LifeCycle Meta-Argument - Ignore Changes][PlEb] |
+| 36 | [Challenges with Count][PlEc] |
+| 37 | [for_each in Terraform][PlEd] |
 
 [PlDa1]: <./firewall.md>
 [PlDa2]: <./doc-code-changes.md>
@@ -49,6 +52,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDa]: <./cross-reference-attributes.md>
 [PlDb]: <./output-values.md>
 [PlDc]: <./terraform-variables.md>
+[PlDc2]: <./tfvars.md>
 [PlDd]: <./variable-assignment.md>
 [PlDe]: <./data-types.md>
 [PlDf]: <./counte-parameter.md>
