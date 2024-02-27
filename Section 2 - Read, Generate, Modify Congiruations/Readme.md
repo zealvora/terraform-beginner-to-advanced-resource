@@ -16,8 +16,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 7 | [Terraform Variables Practical][PlDc] |
 | 7 | [Variable Definitions File (TFVARS)][PlDc2] |
 | 8 | [Approaches for Variable Assignment][PlDd] |
-| 10 | [Setting Environment variable in Linux][PlDd] |
-| 11 | [Variable Definition Precedence][PlDd] |
+| 10 | [Setting Environment variable in Linux][PlDd2] |
+| 11 | [Variable Definition Precedence][PlDd3] |
 | 12 | [Data Types for Variables][PlDe] |
 | 13 | [Count and Count Index][PlDf] |
 | 14 | [Conditional Expressions][PlDg] |
@@ -54,6 +54,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDc]: <./terraform-variables.md>
 [PlDc2]: <./tfvars.md>
 [PlDd]: <./variable-assignment.md>
+[PlDd2]: <./env-variable-assignment.md>
+[PlDd3]: <./variable-precedence.md>
 [PlDe]: <./data-types.md>
 [PlDf]: <./counte-parameter.md>
 [PlDg]: <./conditional.md>
