@@ -1,6 +1,6 @@
 # Domain 4 - Read, Generate, Modify Configurations
 
-The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2023 video course.
+The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2024 video course.
 
 
 # Video-Document Mapper
@@ -9,7 +9,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | ------ | ------ |
 | 1 | [Creating Firewall Rules using Terraform][PlDa] |
 | 2 | [Dealing with Documentation Code Updates][PlDb] |
-| 3 | [Creating Elastic IP with Terraform][PlDac] |
+| 3 | [Creating Elastic IP with Terraform][PlDc] |
 | 4 | [Basic of Attributes][PlDd] |
 | 5 | [Cross Reference Resource Attributes Practical][PlDe] |
 | 6 | [Output Values][PlDf] |
