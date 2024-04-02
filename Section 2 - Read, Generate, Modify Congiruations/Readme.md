@@ -7,78 +7,82 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 
 | Sr No | Document Link |
 | ------ | ------ |
-| 1 | [Creating Firewall Rules using Terraform][PlDa1] |
-| 2 | [Dealing with Documentation Code Updates][PlDa2] |
-| 3 | [Creating Elastic IP with Terraform][PlDa3] |
-| 4 | [Basic of Attributes][PlDa4] |
-| 5 | [Cross Reference Resource Attributes Practical][PlDa] |
-| 6 | [Output Values][PlDb] |
-| 7 | [Terraform Variables Practical][PlDc] |
-| 7 | [Variable Definitions File (TFVARS)][PlDc2] |
-| 8 | [Approaches for Variable Assignment][PlDd] |
-| 10 | [Setting Environment variable in Linux][PlDd2] |
-| 11 | [Variable Definition Precedence][PlDd3] |
-| 12 | [Data Types for Variables][PlDe] |
-| 13 | [Count and Count Index][PlDf] |
-| 14 | [Conditional Expressions][PlDg] |
-| 15 | [Local Values][PlDh] |
-| 16 | [Terraform Functions][PlDi] |
-| 17 | [Data Sources][PlDj] |
-| 18 | [Debugging In Terraform][PlDk] |
-| 19 | [Terraform Format][PlDl] |
-| 20 | [Terraform Validate][PlDm] |
-| 21 | [Load Order and Semantics][PlDn] |
-| 22 | [Dynamic Blocks][PlDo] |
-| 23 | [Tainting Resources][PlDp] |
-| 24 | [Splat Expression][PlDq] |
-| 25 | [Terraform Graph][PlDr] |
-| 26 | [Saving Terraform Plan to File][PlDs] |
-| 27 | [Terraform Settings][PlDt] |
-| 28 | [Dealing with Large Infrastructure][PlDu] |
-| 29 | [Fetching Data for Maps and List in Variable][PlDv] |
-| 30 | [Zipmap Function][PlDw] |
-| 31 | [Comments in Terraform][PlDx] |
-| 32 | [Resource Behavior and Meta Arguments][PlDy] |
-| 33 | [LifeCycle Meta-Argument - Create Before Destroy][PlDz] |
-| 34 | [LifeCycle Meta-Argument - Prevent Destroy][PlEa] |
-| 35 | [LifeCycle Meta-Argument - Ignore Changes][PlEb] |
-| 36 | [Challenges with Count][PlEc] |
-| 37 | [for_each in Terraform][PlEd] |
+| 1 | [Creating Firewall Rules using Terraform][PlDa] |
+| 2 | [Dealing with Documentation Code Updates][PlDb] |
+| 3 | [Creating Elastic IP with Terraform][PlDac] |
+| 4 | [Basic of Attributes][PlDd] |
+| 5 | [Cross Reference Resource Attributes Practical][PlDe] |
+| 6 | [Output Values][PlDf] |
+| 7 | [Terraform Variables Practical][PlDg] |
+| 8 | [Variable Definitions File (TFVARS)][PlDh] |
+| 9 | [Approaches for Variable Assignment][PlDi] |
+| 10 | [Setting Environment variable in Linux][PlDj] |
+| 11 | [Variable Definition Precedence][PlDk] |
+| 12 | [Data Types][PlDl] |
+| 13 | [Data Type - LIST][PlDm] |
+| 14 | [Data Type - MAP][PlDn] |
+| 15 | [Count and Count Index][PlDo] |
+| 16 | [Conditional Expressions][PlDp] |
+| 17 | [Local Values][PlDq] |
+| 18 | [Terraform Functions][PlDr] |
+| 19 | [Data Sources][PlDs] |
+| 20 | [Debugging In Terraform][PlDt] |
+| 21 | [Terraform Format][PlDu] |
+| 22 | [Terraform Validate][PlDv] |
+| 23 | [Load Order and Semantics][PlDw] |
+| 24 | [Dynamic Blocks][PlDx] |
+| 25 | [Tainting Resources][PlDy] |
+| 26 | [Splat Expression][PlDz] |
+| 27 | [Terraform Graph][PlEa] |
+| 28 | [Saving Terraform Plan to File][PlEb] |
+| 29 | [Terraform Settings][PlEc] |
+| 30 | [Dealing with Large Infrastructure][PlEe] |
+| 31 | [Fetching Data for Maps and List in Variable][PlEf] |
+| 32 | [Zipmap Function][PlEg] |
+| 33 | [Comments in Terraform][PlEh] |
+| 34 | [Resource Behavior and Meta Arguments][PlEi] |
+| 35 | [LifeCycle Meta-Argument - Create Before Destroy][PlEj] |
+| 36 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
+| 37 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
+| 38 | [Challenges with Count][PlEm] |
+| 39 | [for_each in Terraform][PlEn] |
 
-[PlDa1]: <./firewall.md>
-[PlDa2]: <./doc-code-changes.md>
-[PlDa3]: <./eip.md>
-[PlDa4]: <./attributes.md>
-[PlDa]: <./cross-reference-attributes.md>
-[PlDb]: <./output-values.md>
-[PlDc]: <./terraform-variables.md>
-[PlDc2]: <./tfvars.md>
-[PlDd]: <./variable-assignment.md>
-[PlDd2]: <./env-variable-assignment.md>
-[PlDd3]: <./variable-precedence.md>
-[PlDe]: <./data-types.md>
-[PlDf]: <./counte-parameter.md>
-[PlDg]: <./conditional.md>
-[PlDh]: <./local-values.md>
-[PlDi]: <./functions.md>
-[PlDj]: <./data-sources.md>
-[PlDk]: <./debugging.md>
-[PlDl]: <./terraform-format.md>
-[PlDm]: <./terraform-validate.md>
-[PlDo]: <./dynamic-block.md>
-[PlDn]: <./load-order.md>
-[PlDp]: <./taint.md>
-[PlDq]: <./splat-expression.md>
-[PlDr]: <./graph.md>
-[PlDs]: <./plan-to-file.md>
-[PlDt]: <./settings.md>
-[PlDu]: <./large-infra.md>
-[PlDv]: <./fetch-values-variables.tf>
-[PlDw]: <./zipmap.tf>
-[PlDx]: <./tf-comments.tf>
-[PlDy]: <./meta-argument.md>
-[PlDz]: <./create-before-destroy.md>
-[PlEa]: <./prevent-destroy.md>
-[PlEb]: <./ignore-changes.md>
-[PlEc]: <./challenge-count.md>
-[PlEd]: <./for_each.md>
+[PlDa]: <./firewall.md>
+[PlDb]: <./doc-code-changes.md>
+[PlDc]: <./eip.md>
+[PlDd]: <./attributes.md>
+[PlDe]: <./cross-reference-attributes.md>
+[PlDf]: <./output-values.md>
+[PlDg]: <./terraform-variables.md>
+[PlDh]: <./tfvars.md>
+[PlDi]: <./variable-assignment.md>
+[PlDj]: <./env-variable-assignment.md>
+[PlDk]: <./variable-precedence.md>
+[PlDl]: <./data-types.md>
+[PlDm]: <./list-data-type.md>
+[PlDn]: <./map-data-type.md>
+[PlDo]: <./counte-parameter.md>
+[PlDp]: <./conditional.md>
+[PlDq]: <./local-values.md>
+[PlDr]: <./functions.md>
+[PlDs]: <./data-sources.md>
+[PlDt]: <./debugging.md>
+[PlDu]: <./terraform-format.md>
+[PlDv]: <./terraform-validate.md>
+[PlDw]: <./dynamic-block.md>
+[PlDx]: <./load-order.md>
+[PlDy]: <./taint.md>
+[PlDz]: <./splat-expression.md>
+[PlEa]: <./graph.md>
+[PlEb]: <./plan-to-file.md>
+[PlEc]: <./settings.md>
+[PlEe]: <./large-infra.md>
+[PlEf]: <./fetch-values-variables.tf>
+[PlEg]: <./zipmap.tf>
+[PlEh]: <./tf-comments.tf>
+[PlEi]: <./meta-argument.md>
+[PlEj]: <./create-before-destroy.md>
+[PlEk]: <./prevent-destroy.md>
+[PlEl]: <./ignore-changes.md>
+[PlEm]: <./challenge-count.md>
+[PlEn]: <./for_each.md>
