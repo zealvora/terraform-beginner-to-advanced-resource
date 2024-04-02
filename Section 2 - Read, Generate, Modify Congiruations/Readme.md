@@ -21,31 +21,32 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 12 | [Data Types][PlDl] |
 | 13 | [Data Type - LIST][PlDm] |
 | 14 | [Data Type - MAP][PlDn] |
-| 15 | [Count and Count Index][PlDo] |
-| 16 | [Conditional Expressions][PlDp] |
-| 17 | [Local Values][PlDq] |
-| 18 | [Terraform Functions][PlDr] |
-| 19 | [Data Sources][PlDs] |
-| 20 | [Debugging In Terraform][PlDt] |
-| 21 | [Terraform Format][PlDu] |
-| 22 | [Terraform Validate][PlDv] |
-| 23 | [Load Order and Semantics][PlDw] |
-| 24 | [Dynamic Blocks][PlDx] |
-| 25 | [Tainting Resources][PlDy] |
-| 26 | [Splat Expression][PlDz] |
-| 27 | [Terraform Graph][PlEa] |
-| 28 | [Saving Terraform Plan to File][PlEb] |
-| 29 | [Terraform Settings][PlEc] |
-| 30 | [Dealing with Large Infrastructure][PlEe] |
-| 31 | [Fetching Data for Maps and List in Variable][PlEf] |
-| 32 | [Zipmap Function][PlEg] |
-| 33 | [Comments in Terraform][PlEh] |
-| 34 | [Resource Behavior and Meta Arguments][PlEi] |
-| 35 | [LifeCycle Meta-Argument - Create Before Destroy][PlEj] |
-| 36 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
-| 37 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
-| 38 | [Challenges with Count][PlEm] |
-| 39 | [for_each in Terraform][PlEn] |
+| 15 | [Fetching Values from Map and List in Variable][PlDn2] |
+| 16 | [Count and Count Index][PlDo] |
+| 17 | [Conditional Expressions][PlDp] |
+| 18 | [Local Values][PlDq] |
+| 19 | [Terraform Functions][PlDr] |
+| 20 | [Data Sources][PlDs] |
+| 21 | [Debugging In Terraform][PlDt] |
+| 22 | [Terraform Format][PlDu] |
+| 23 | [Terraform Validate][PlDv] |
+| 24 | [Load Order and Semantics][PlDw] |
+| 25 | [Dynamic Blocks][PlDx] |
+| 26 | [Tainting Resources][PlDy] |
+| 27 | [Splat Expression][PlDz] |
+| 28 | [Terraform Graph][PlEa] |
+| 29 | [Saving Terraform Plan to File][PlEb] |
+| 30 | [Terraform Settings][PlEc] |
+| 31 | [Dealing with Large Infrastructure][PlEe] |
+| 32 | [Fetching Data for Maps and List in Variable][PlEf] |
+| 33 | [Zipmap Function][PlEg] |
+| 34 | [Comments in Terraform][PlEh] |
+| 35 | [Resource Behavior and Meta Arguments][PlEi] |
+| 36 | [LifeCycle Meta-Argument - Create Before Destroy][PlEj] |
+| 37 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
+| 38 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
+| 39 | [Challenges with Count][PlEm] |
+| 40 | [for_each in Terraform][PlEn] |
 
 [PlDa]: <./firewall.md>
 [PlDb]: <./doc-code-changes.md>
@@ -61,6 +62,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDl]: <./data-types.md>
 [PlDm]: <./list-data-type.md>
 [PlDn]: <./map-data-type.md>
+[PlDn2]: <./fetch-values-variables.tf>
 [PlDo]: <./counte-parameter.md>
 [PlDp]: <./conditional.md>
 [PlDq]: <./local-values.md>
