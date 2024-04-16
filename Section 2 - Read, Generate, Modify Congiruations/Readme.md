@@ -28,27 +28,28 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 19 | [Terraform Functions][PlDr] |
 | 20 | [Overview of Data Sources][PlDs] |
 | 21 | [Data Sources - Format][PlDs1] |
-| 22 | [Fetching OS Image using Data Sources - Practical][PlDs2] |
-| 23 | [Debugging In Terraform][PlDt] |
-| 24 | [Terraform Format][PlDu] |
-| 25 | [Terraform Validate][PlDv] |
-| 26 | [Load Order and Semantics][PlDw] |
-| 27 | [Dynamic Blocks][PlDx] |
-| 28 | [Tainting Resources][PlDy] |
-| 29 | [Splat Expression][PlDz] |
-| 30 | [Terraform Graph][PlEa] |
-| 31 | [Saving Terraform Plan to File][PlEb] |
-| 32 | [Terraform Settings][PlEc] |
-| 33 | [Dealing with Large Infrastructure][PlEe] |
-| 34 | [Fetching Data for Maps and List in Variable][PlEf] |
-| 35 | [Zipmap Function][PlEg] |
-| 36 | [Comments in Terraform][PlEh] |
-| 37 | [Resource Behavior and Meta Arguments][PlEi] |
-| 38 | [LifeCycle Meta-Argument - Create Before Destroy][PlEj] |
-| 39 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
-| 40 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
-| 41 | [Challenges with Count][PlEm] |
-| 42 | [for_each in Terraform][PlEn] |
+| 22 | [Use:Case - Fetching OS Image using Data Sources][PlDs2] |
+| 23 | [Fetching OS Image using Data Sources - Practical][PlDs3] |
+| 24 | [Debugging In Terraform][PlDt] |
+| 25 | [Terraform Format][PlDu] |
+| 26 | [Terraform Validate][PlDv] |
+| 27 | [Load Order and Semantics][PlDw] |
+| 28 | [Dynamic Blocks][PlDx] |
+| 29 | [Tainting Resources][PlDy] |
+| 30 | [Splat Expression][PlDz] |
+| 31 | [Terraform Graph][PlEa] |
+| 32 | [Saving Terraform Plan to File][PlEb] |
+| 33 | [Terraform Settings][PlEc] |
+| 34 | [Dealing with Large Infrastructure][PlEe] |
+| 35 | [Fetching Data for Maps and List in Variable][PlEf] |
+| 36 | [Zipmap Function][PlEg] |
+| 37 | [Comments in Terraform][PlEh] |
+| 38 | [Resource Behavior and Meta Arguments][PlEi] |
+| 39 | [LifeCycle Meta-Argument - Create Before Destroy][PlEj] |
+| 40 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
+| 41 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
+| 42 | [Challenges with Count][PlEm] |
+| 43 | [for_each in Terraform][PlEn] |
 
 [PlDa]: <./firewall.md>
 [PlDb]: <./doc-code-changes.md>
@@ -71,7 +72,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDr]: <./functions.md>
 [PlDs]: <./data-sources.md>
 [PlDs1]: <./data-source-format.md>
-[PlDs2]: <./data-source-format.md>
+[PlDs2]: <./fetch-ami-data-source-usecase.md>
+[PlDs3]: <./fetch-ami-data-source-practical.md>
 [PlDt]: <./debugging.md>
 [PlDu]: <./terraform-format.md>
 [PlDv]: <./terraform-validate.md>
