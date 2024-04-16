@@ -71,6 +71,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDr]: <./functions.md>
 [PlDs]: <./data-sources.md>
 [PlDs1]: <./data-source-format.md>
+[PlDs2]: <./data-source-format.md>
 [PlDt]: <./debugging.md>
 [PlDu]: <./terraform-format.md>
 [PlDv]: <./terraform-validate.md>
