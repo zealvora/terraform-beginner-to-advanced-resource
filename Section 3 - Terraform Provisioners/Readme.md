@@ -7,12 +7,12 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 
 | Sr No | Document Link |
 | ------ | ------ |
-| 1 | [Implementing remote-exec provisioners][PlDa] |
-| 2 | [Implementing local-exec provisioners][PlDb] |
+| 1 | [Practical - local-exec Provisioner][PlDa] |
+| 2 | [Practical - remote-exec Provisioner][PlDb] |
 | 3 | [Creation-Time & Destroy-Time Provisioners][PlDc] |
 | 4 | [Failure Behavior for Provisioners][PlDd] |
 
 [PlDa]: <./remote-exec.md>
-[PlDb]: <./local-exec.tf>
+[PlDb]: <./local-exec.md>
 [PlDc]: <./provisioner-types.md>
 [PlDd]: <./failure-behavior.md>
