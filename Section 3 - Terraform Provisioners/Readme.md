@@ -1,6 +1,6 @@
 # Domain  - Terraform Provisioners
 
-The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2023 video course.
+The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2024 video course.
 
 
 # Video-Document Mapper
@@ -17,4 +17,4 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDb]: <./local-exec.md>
 [PlDc]: <./points-to-note.md>
 [PlDd]: <./create-destroy-time-provisioner.md>
-[PlDe]: <./failure-behavior.md>
+[PlDe]: <./failure-behaviour.md>

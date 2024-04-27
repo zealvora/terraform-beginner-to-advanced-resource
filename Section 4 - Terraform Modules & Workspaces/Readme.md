@@ -1,6 +1,6 @@
 # Domain - Terraform Module & Workspaces
 
-The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2023 video course.
+The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2024 video course.
 
 
 ### Video-Document Mapper
