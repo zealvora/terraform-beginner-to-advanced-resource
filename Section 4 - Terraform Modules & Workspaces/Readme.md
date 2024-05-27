@@ -9,16 +9,20 @@ The code mentioned in this document is used in the HashiCorp Certified Terraform
 | ------ | ------ |
 | 1 | [Creating EC2 instance using Modules][PlDa] |
 | 2 | [Points to Note - Referencing Modules][PlDb] |
-| 3 | [Terraform Registry][PlDc] |
-| 4 | [Using Locals with Modules][PlDd] |
-| 5 | [Referencing Module Outputs][PlDe] |
-| 6 | [Implementing Terraform Workspace][PlDf] |
+| 3 | [Creating Custom Module for EC2][PlDc] |
+| 4 | [Module Sources - Calling a Module][PlDd] |
+| 5 | [Using Local Paths to Call Custom Module][PlDe] |
+| 7 | [Using Locals with Modules][PlDf] |
+| 8 | [Referencing Module Outputs][PlDg] |
+| 9 | [Implementing Terraform Workspace][PlDh] |
 
 
 
    [PlDa]: <./ec2-module.md>
    [PlDb]: <./note-points-modules.md>
-   [PlDc]: <./terraform-registry.md>
-   [PlDd]: <./module-locals>
-   [PlDe]: <./module-outputs>
-   [PlDf]: <./kplabs-workspace.md>
+   [PlDc]: <./creating-module.md>
+   [PlDd]: <./module-source.md>
+   [PlDe]: <./local-paths.md>
+   [PlDf]: <./module-locals>
+   [PlDg]: <./module-outputs>
+   [PlDh]: <./kplabs-workspace.md>
