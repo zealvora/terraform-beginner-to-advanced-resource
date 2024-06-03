@@ -23,7 +23,7 @@ The code mentioned in this document is used in the HashiCorp Certified Terraform
    [PlDa]: <./ec2-module.md>
    [PlDb]: <./note-points-modules.md>
    [PlDc]: <./creating-module.md>
-   [PlDd]: <./module-source.md>
+   [PlDd]: <./module-sources.md>
    [PlDe]: <./local-paths.md>
    [PlDf]: <./variables-custom-module.md>
    [PlDg]: <./provider-custom-module.md>
