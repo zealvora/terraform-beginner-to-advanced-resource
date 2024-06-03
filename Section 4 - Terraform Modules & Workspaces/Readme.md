@@ -12,9 +12,11 @@ The code mentioned in this document is used in the HashiCorp Certified Terraform
 | 3 | [Creating Custom Module for EC2][PlDc] |
 | 4 | [Module Sources - Calling a Module][PlDd] |
 | 5 | [Using Local Paths to Call Custom Module][PlDe] |
-| 7 | [Using Locals with Modules][PlDf] |
-| 8 | [Referencing Module Outputs][PlDg] |
-| 9 | [Implementing Terraform Workspace][PlDh] |
+| 6 | [Converting Hardcoded Values to Variables in Custom Module][PlDf] |
+| 7 | [Improvements in Provider Configuration in Custom Module][PlDg] |
+| 8 | [Using Locals with Modules][PlDh] |
+| 9 | [Referencing Module Outputs][PlDi] |
+| 10 | [Implementing Terraform Workspace][PlDj] |
 
 
 
@@ -23,6 +25,8 @@ The code mentioned in this document is used in the HashiCorp Certified Terraform
    [PlDc]: <./creating-module.md>
    [PlDd]: <./module-source.md>
    [PlDe]: <./local-paths.md>
-   [PlDf]: <./module-locals>
-   [PlDg]: <./module-outputs>
-   [PlDh]: <./kplabs-workspace.md>
+   [PlDf]: <./variables-custom-module.md>
+   [PlDg]: <./provider-custom-module.md>
+   [PlDh]: <./module-locals>
+   [PlDi]: <./module-outputs>
+   [PlDj]: <./kplabs-workspace.md>
