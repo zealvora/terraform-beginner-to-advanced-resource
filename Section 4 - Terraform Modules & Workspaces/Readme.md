@@ -14,8 +14,8 @@ The code mentioned in this document is used in the HashiCorp Certified Terraform
 | 5 | [Using Local Paths to Call Custom Module][PlDe] |
 | 6 | [Converting Hardcoded Values to Variables in Custom Module][PlDf] |
 | 7 | [Improvements in Provider Configuration in Custom Module][PlDg] |
-| 8 | [Module Outputs][PlDi] |
-| 9 | [Implementing Terraform Workspace][PlDj] |
+| 8 | [Module Outputs][PlDh] |
+| 9 | [Implementing Terraform Workspace][PlDi] |
 
 
 
