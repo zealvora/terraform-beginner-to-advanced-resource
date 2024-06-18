@@ -27,7 +27,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 18 | [Local Values][PlDq] |
 | 19 | [Terraform Functions][PlDr] |
 | 20 | [Challenge - Analyzing Terraform Code Containing Functions][PlDr2] |
-| 21 | [Solution - Analyzing Terraform Code Containing Functions][PlDr2] |
+| 21 | [Solution - Analyzing Terraform Code Containing Functions][PlDr3] |
 | 22 | [Overview of Data Sources][PlDs] |
 | 23 | [Data Sources - Format][PlDs1] |
 | 24 | [Use:Case - Fetching OS Image using Data Sources][PlDs2] |
