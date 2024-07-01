@@ -19,7 +19,7 @@ resource "aws_instance" "myec2" {
 
 resource "aws_eip" "lb" {
   instance = aws_instance.myec2.id
-  vpc      = true
+  domain   = "vpc"
 }
 
 resource "aws_security_group" "allow_tls" {
