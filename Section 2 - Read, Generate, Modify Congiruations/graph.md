@@ -1,47 +1,42 @@
-## This snippet is from the Terraform Graph Video.
+## Documents and Websites Referenced
 
-### GraphiViz Documentation Referred in Course:
+1. HashiCorp Documentation Related to GraphViz
+   
+https://developer.hashicorp.com/terraform/cli/commands/graph
 
-https://graphviz.gitlab.io/download/
+2. Onliner Website to create Visualization
 
-### graph.tf
+https://dreampuf.github.io/GraphvizOnline/
+
+### sample-file.tf
 ```sh
-provider "aws" {
-  region     = "us-west-2"
-  access_key = "YOUR-ACCESS-KEY"
-  secret_key = "YOUR-SECRET-KEY"
-}
-
-resource "aws_instance" "myec2" {
-   ami = "ami-082b5a644766e0e6f"
-   instance_type = "t2.micro"
-}
-
 resource "aws_eip" "lb" {
-  instance = aws_instance.myec2.id
   domain   = "vpc"
 }
 
-resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
+resource "aws_security_group" "example" {
+  name        = "attribute-sg"
+}
 
-  ingress {
-    description = "TLS from VPC"
-    from_port   = 443
-    to_port     = 443
-    protocol    = "tcp"
-    cidr_blocks = ["${aws_eip.lb.private_ip}/32"]
+resource "aws_vpc_security_group_ingress_rule" "example" {
+  security_group_id = aws_security_group.example.id
 
-  }
+  cidr_ipv4   = "${aws_eip.lb.public_ip}/32"
+  from_port   = 443
+  ip_protocol = "tcp"
+  to_port     = 443
+}
+
+resource "aws_instance" "web" {
+  ami           = "ami-0440d3b780d96b29d"
+  instance_type = "t2.micro"
 }
 ```
 
-
-
 ### Commands Used:
 ```sh
-terraform graph > graph.dot
-yum install graphviz
-cat graph.dot | dot -Tsvg > graph.svg
+terraform graph
+apt install graphviz
+terraform graph | dot -Tsvg > graph.svg
 ```
 
