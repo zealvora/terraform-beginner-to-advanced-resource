@@ -6,7 +6,7 @@ provider "aws" {
 }
 
 resource "aws_eip" "myeip" {
-   vpc      = true
+   domain = "vpc"
 }
 
 #18.12.30.50
