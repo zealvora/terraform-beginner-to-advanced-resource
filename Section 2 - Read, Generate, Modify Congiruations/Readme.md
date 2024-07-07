@@ -90,7 +90,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlEc]: <./settings.md>
 [PlEe]: <./large-infra.md>
 [PlEf]: <./fetch-values-variables.tf>
-[PlEg]: <./zipmap.tf>
+[PlEg]: <./zipmap.md>
 [PlEh]: <./tf-comments.tf>
 [PlEi]: <./meta-argument.md>
 [PlEj]: <./create-before-destroy.md>
