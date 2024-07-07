@@ -16,7 +16,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 
 
    [PlDa]: <./multi-provider.md>
-   [PlDb]: <./sensitive.tf>
+   [PlDb]: <./sensitive.md>
    [PlDc]: <./tfstate-git.md>
    [PlDd]: <./vault.tf>
    [PlDe]: <./dependency-lock.tf>
