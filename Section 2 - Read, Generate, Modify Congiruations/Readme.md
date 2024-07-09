@@ -83,8 +83,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDt]: <./debugging.md>
 [PlDu]: <./terraform-format.md>
 [PlDv]: <./terraform-validate.md>
-[PlDw]: <./dynamic-block.md>
-[PlDx]: <./load-order.md>
+[PlDw]: <./load-order.md> 
+[PlDx]: <./dynamic-block.md>
 [PlDy]: <./taint.md>
 [PlDz]: <./splat-expression.md>
 [PlEa]: <./graph.md>
