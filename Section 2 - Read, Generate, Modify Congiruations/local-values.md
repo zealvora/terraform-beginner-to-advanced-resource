@@ -1,3 +1,6 @@
+### Documentation Referred:
+
+https://developer.hashicorp.com/terraform/language/functions/formatdate
 
 ### Base Code of local-values.tf
 
