@@ -1,21 +1,34 @@
 
-## Demo Code and Examples Used During Demo:
+### Documentation Referenced:
+
+https://registry.terraform.io/providers/hashicorp/aws/latest
+
+https://developer.hashicorp.com/terraform/language/settings
+
+#### Base Code Used 
+
+```sh
+resource "aws_security_group" "sg_01" {
+  name = "app_firewall"
+}
+```
+
+### Final Code Used
+
 ```sh
 terraform {
-  required_version = "< 0.11"
+  required_version = "1.9.1"
+
   required_providers {
-    aws = "~> 2.0"
+    aws = {
+      version = "5.54.1"
+      source = "hashicorp/aws"
+    }
   }
 }
 
-provider "aws" {
-  region     = "ap-southeast-1"
-  access_key = "YOUR-KEY"
-  secret_key = "YOUR-KEY"
+resource "aws_security_group" "sg_01" {
+  name = "app_firewall"
 }
 
-resource "aws_instance" "myec2" {
-   ami = "ami-0b1e534a4ff9019e0"
-   instance_type = "t2.micro"
-}
 ```
