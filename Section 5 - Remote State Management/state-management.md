@@ -24,21 +24,21 @@ resource "aws_security_group" "prod" {
 
 ## State Management Commands:
 
-### List the Resources Managed through Terraform:
+#### 1 - List the Resources Managed through Terraform:
 ```sh
 terraform state list
 ```
-### Show Attributes of Resource
-`
+#### 2 - Show Attributes of Resource
+```sh
 terraform state show aws_security_group.prod
 ```
 
-### Pull the State file From Remote Backend
+#### 3 - Pull the State file From Remote Backend
 
 ```sh
 terraform state pull
 ```
-### Terraform State RM
+#### 4 - Terraform State RM
 
 Extra code used as part of this example
 
@@ -67,12 +67,12 @@ terraform state rm aws_vpc_security_group_ingress_rule.example
 terraform state rm aws_vpc_security_group_ingress_rule.example2
 ```
 
-### Moving Resource Address
+#### 5 - Moving Resource Address
 ```sh
 terraform state mv aws_iam_user.dev aws_iam_user.prod
 ```
 
-### Replace Provider
+#### 6 - Replace Provider
 ```sh
 terraform state replace-provider hashicorp/aws kplabs.in/internal/aws
 ```
