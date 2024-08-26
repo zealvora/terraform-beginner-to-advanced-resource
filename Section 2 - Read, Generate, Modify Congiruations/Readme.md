@@ -43,16 +43,17 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 34 | [Terraform Graph][PlEa] |
 | 35 | [Saving Terraform Plan to File][PlEb] |
 | 36 | [Terraform Settings][PlEc] |
-| 37 | [Dealing with Large Infrastructure][PlEe] |
-| 38 | [Fetching Data for Maps and List in Variable][PlEf] |
-| 39 | [Zipmap Function][PlEg] |
-| 40 | [Comments in Terraform][PlEh] |
-| 41 | [Resource Behavior and Meta Arguments][PlEi] |
-| 42 | [LifeCycle Meta-Argument - Create Before Destroy][PlEj] |
-| 43 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
-| 44 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
-| 45 | [Challenges with Count][PlEm] |
-| 46 | [for_each in Terraform][PlEn] |
+| 37 | [Resource Targeting][PlEc2] |
+| 38 | [Dealing with Large Infrastructure][PlEe] |
+| 39 | [Fetching Data for Maps and List in Variable][PlEf] |
+| 40 | [Zipmap Function][PlEg] |
+| 41 | [Comments in Terraform][PlEh] |
+| 42 | [Resource Behavior and Meta Arguments][PlEi] |
+| 43 | [LifeCycle Meta-Argument - Create Before Destroy][PlEj] |
+| 44 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
+| 45 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
+| 46 | [Challenges with Count][PlEm] |
+| 47 | [for_each in Terraform][PlEn] |
 
 [PlDa]: <./firewall.md>
 [PlDb]: <./doc-code-changes.md>
@@ -90,6 +91,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlEa]: <./graph.md>
 [PlEb]: <./plan-to-file.md>
 [PlEc]: <./settings.md>
+[PlEc2]: <./resource-target.md>
 [PlEe]: <./large-infra.md>
 [PlEf]: <./fetch-values-variables.tf>
 [PlEg]: <./zipmap.md>
