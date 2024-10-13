@@ -53,7 +53,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 44 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
 | 45 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
 | 46 | [Challenges with Count][PlEm] |
-| 47 | [for_each in Terraform][PlEn] |
+| 47 | [Data Type - SET ][PlEn] |
+| 48 | [for_each in Terraform][PlEo] |
 
 [PlDa]: <./firewall.md>
 [PlDb]: <./doc-code-changes.md>
@@ -101,4 +102,5 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlEk]: <./prevent-destroy.md>
 [PlEl]: <./ignore-changes.md>
 [PlEm]: <./challenge-count.md>
-[PlEn]: <./for_each.md>
+[PlEn]: <./data-type-set.md>
+[PlEo]: <./for_each.md>

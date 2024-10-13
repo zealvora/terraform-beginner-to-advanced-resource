@@ -1,30 +1,39 @@
+### Documentation Referenced:
 
-### Example 1 - IAM User
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+
+
+### Example 1 - for_each with SET
+
 ```sh
-provider "aws" {
-  region     = "us-west-2"
-  access_key = ""
-  secret_key = ""
+variable "user_names" {
+    type = set(string)
+    default = ["alice","bob","john","james"]
 }
 
-resource "aws_iam_user" "iam" {
-  for_each = toset( ["user-01","user-02", "user-03"] )
-  name     = each.key
+resource "aws_iam_user" "this" {
+    for_each = var.user_names
+    name = each.value
 }
 ```
 
-### Example 2 - EC2 Instance
+### Example 2 - for_each with MAP
+
 ```sh
-resource "aws_instance" "myec2" {
-  ami = "ami-0cea098ed2ac54925"
-  for_each  = {
-      key1 = "t2.micro"
-      key2 = "t2.medium"
-   }
-  instance_type    = each.value
-  key_name         = each.key
-  tags =  {
-   Name = each.value
+variable "my-map" {
+    default = {
+        key = "value"
+        key1 = "value1"
     }
+}
+
+resource "aws_instance" "web" {
+  for_each      = var.my-map
+  ami           = each.value
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = each.key
+  }
 }
 ```
