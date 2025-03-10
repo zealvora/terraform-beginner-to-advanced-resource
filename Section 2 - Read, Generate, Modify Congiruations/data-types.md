@@ -1,85 +1,35 @@
-## This snippet is from the Data Types for Variable video.
 
-### ec2_datatype.tf
+## Documentation Referred:
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+
+## data-types.tf
+
+### Base Code used in Video
 
 ```sh
-provider "aws" {
-  region     = "us-west-2"
-  access_key = "YOUR-ACCESS-KEY"
-  secret_key = "YOUR-SECRET-KEY"
-}
-
 resource "aws_iam_user" "lb" {
-  name = var.usernumber
-  path = "/system/"
-}
-
-```
-### elb.tf
-
-Documentation:  https://www.terraform.io/docs/providers/aws/r/elb.html
-
-Final Code:
-
-```sh
-provider "aws" {
-  region     = "us-west-2"
-  access_key = "YOUR-ACCESS-KEY"
-  secret_key = "YOUR-SECRET-KEY"
-}
-
-resource "aws_elb" "bar" {
-  name               = var.elb_name
-  availability_zones = var.az
-
-  listener {
-    instance_port     = 8000
-    instance_protocol = "http"
-    lb_port           = 80
-    lb_protocol       = "http"
-  }
-
-  health_check {
-    healthy_threshold   = 2
-    unhealthy_threshold = 2
-    timeout             = 3
-    target              = "HTTP:8000/"
-    interval            = 30
-  }
-
-  cross_zone_load_balancing   = true
-  idle_timeout                = var.timeout
-  connection_draining         = true
-  connection_draining_timeout = var.timeout
-
-  tags = {
-    Name = "foobar-terraform-elb"
-  }
+  name = "loadbalancer"
 }
 ```
-### variables.tf
+
+### Final Code with Data Type Restriction for Variable
 
 ```sh
-
-variable "usernumber" {
+variable "username {
   type = number
 }
-
-variable "elb_name" {
-  type = string
-}
-
-variable "az" {
-  type = list
-}
-
-variable "timeout" {
-  type = number
+resource "aws_iam_user" "lb" {
+  name = var.username
 }
 ```
-### terraform.tfvars
+
+### EC2 Instance Code Example
+
 ```sh
-elb_name="myelb"
-timeout="400"
-az=["us-west-1a","us-west-1b"]
+resource "aws_instance" "web" {
+  ami           = "ami-0c101f26f147fa7fd"
+  instance_type = "t3.micro"
+  vpc_security_group_ids = ["sg-06dc77ed59c310f03"]
+}
 ```

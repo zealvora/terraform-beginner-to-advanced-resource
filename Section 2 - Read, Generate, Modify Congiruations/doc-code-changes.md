@@ -1,13 +1,26 @@
-resource "aws_security_group" "allow_tls" {
+### Documentation Referred:
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
+
+### old-approach-firewall.tf
+
+```sh
+
+provider "aws" {
+  region     = "us-east-1"
+}
+
+resource "aws_security_group" "old_approach" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"
+
 
   ingress {
     description      = "TLS from VPC"
     from_port        = 443
     to_port          = 443
     protocol         = "tcp"
-    cidr_blocks      = ["${data.terraform_remote_state.eip.outputs.eip_addr}/32"]
+    cidr_blocks      = ["10.77.32.50/32"]
   }
 
   egress {
@@ -19,3 +32,4 @@ resource "aws_security_group" "allow_tls" {
   }
 
 }
+```

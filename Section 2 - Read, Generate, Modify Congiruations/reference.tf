@@ -12,7 +12,7 @@ resource "aws_instance" "myec2" {
 }
 
 resource "aws_eip" "lb" {
-  vpc      = true
+  domain = "vpc"
 }
 
 resource "aws_eip_association" "eip_assoc" {

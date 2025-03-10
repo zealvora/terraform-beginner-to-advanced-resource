@@ -1,35 +1,51 @@
-## This snippet is from the Local Values video.
+### Documentation Referred:
 
-### local-values.tf
+https://developer.hashicorp.com/terraform/language/functions/formatdate
+
+### Base Code of local-values.tf
 
 ```sh
-provider "aws" {
-  region     = "ap-southeast-1"
-  access_key = "YOUR-ACCESS-KEY"
-  secret_key = "YOUR-SECRET-KEY"
+resource "aws_security_group" "sg_01" {
+  name = "app_firewall"
+  tags = {
+    Name = "security-team"
+  }
+}
+
+resource "aws_security_group" "sg_02" {
+  name = "db_firewall"
+  tags = {
+    Name = "security-team"
+  }
+}
+
+```
+
+### Final Code
+
+```sh
+variable "tags" {
+  type = map
+  default = {
+    Team = "security-team"
+  }
 }
 
 locals {
-  common_tags = {
-    Owner = "DevOps Team"
-    service = "backend"
+  default = {
+    Team = "security-teams"
+    CreationDate = "date-${formatdate("DDMMYYYY",timestamp())}"
   }
 }
-resource "aws_instance" "app-dev" {
-   ami = "ami-082b5a644766e0e6f"
-   instance_type = "t2.micro"
-   tags = local.common_tags
+
+resource "aws_security_group" "sg_01" {
+  name = "app_firewall"
+  tags = local.default
 }
 
-resource "aws_instance" "db-dev" {
-   ami = "ami-082b5a644766e0e6f"
-   instance_type = "t2.small"
-   tags = local.common_tags
-}
-
-resource "aws_ebs_volume" "db_ebs" {
-  availability_zone = "us-west-2a"
-  size              = 8
-  tags = local.common_tags
+resource "aws_security_group" "sg_02" {
+  name = "db_firewall"
+  tags = local.default
 }
 ```
+

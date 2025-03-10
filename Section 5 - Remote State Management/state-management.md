@@ -1,55 +1,79 @@
+Documentation Referenced:
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_security_group_ingress_rule
+
+### Base Code Used:
+
 ```sh
-provider "aws" {
-  region     = "us-west-2"
-    access_key = "YOUR-ACCESS-KEY"
-    secret_key = "YOUR-SECRET-KEY"
-}
-
-resource "aws_instance" "myec2" {
-  ami           = "ami-082b5a644766e0e6f"
-  instance_type = "t2.micro"
-}
-
-resource "aws_iam_user" "lb" {
-  name = "loadbalancer"
-  path = "/system/"
-}
-
 terraform {
   backend "s3" {
-    bucket = "kplabs-remote-backends"
+    bucket = "kplabs-terraform-backends"
     key    = "demo.tfstate"
     region = "us-east-1"
-    access_key = "YOUR-ACCESS-KEY"
-    secret_key = "YOUR-SECRET-KEY"
   }
+}
+
+resource "aws_iam_user" "dev" {
+  name = "kplabs-user-01"
+}
+
+resource "aws_security_group" "prod" {
+  name        = "terraform-firewalls"
 }
 ```
 
-### State Management Commands:
+## State Management Commands:
 
-#### List the Resource with State File:
+#### 1 - List the Resources Managed through Terraform:
 ```sh
 terraform state list
 ```
-#### Rename Resource within Terraform State
-1. Change the local name of EC2 resource from webapp to myec2. 
-2. Run terraform plan to see the changes. It should destroy and recreate the EC2 instance.
-3. Change the local name of EC2 within the terraform state file with following command:
-
+#### 2 - Show Attributes of Resource
 ```sh
-terraform state mv aws_instance.myec2 aws_instance.webapp
+terraform state show aws_security_group.prod
 ```
-#### Pull Current State file
+
+#### 3 - Pull the State file From Remote Backend
+
 ```sh
 terraform state pull
 ```
-#### Remove Items from State file
+#### 4 - Terraform State RM
+
+Extra code used as part of this example
+
 ```sh
-terraform state rm aws_instance.myec2 
+resource "aws_vpc_security_group_ingress_rule" "example" {
+  security_group_id = aws_security_group.prod.id
+
+  cidr_ipv4   = "10.0.0.0/8"
+  from_port   = 80
+  ip_protocol = "tcp"
+  to_port     = 80
+}
+
+resource "aws_vpc_security_group_ingress_rule" "example2" {
+  security_group_id = aws_security_group.prod.id
+
+  cidr_ipv4   = "10.0.0.0/8"
+  from_port   = 80
+  ip_protocol = "tcp"
+  to_port     = 80
+}
 ```
-#### Show Attributes of Resource from state file
 ```sh
-terraform state show aws_iam_user.lb
+terraform state rm aws_security_group.prod
+terraform state rm aws_vpc_security_group_ingress_rule.example
+terraform state rm aws_vpc_security_group_ingress_rule.example2
+```
+
+#### 5 - Moving Resource Address
+```sh
+terraform state mv aws_iam_user.dev aws_iam_user.prod
+```
+
+#### 6 - Replace Provider
+```sh
+terraform state replace-provider hashicorp/aws kplabs.in/internal/aws
 ```
 

@@ -1,58 +1,129 @@
-## This snippet is from the Terraform Function video.
+## Documentation for Functions
 
-### functions.tf
+https://developer.hashicorp.com/terraform/language/functions
+
+### Commands used in the video:
+```sh
+terraform console
+```
+```sh
+max(10,30,50)
+file("./random-file.txt)
+```
+### Base code of functions.tf
 
 ```sh
-provider "aws" {
-  region     = var.region
-  access_key = "YOUR-ACCESS-KEY"
-  secret_key = "YOUR-SECRET-KEY"
+resource "aws_iam_user" "this" {
+  name = "demo-kplabs-user"
 }
 
-locals {
-  time = formatdate("DD MMM YYYY hh:mm ZZZ", timestamp())
-}
+resource "aws_iam_user_policy" "lb_ro" {
+  name = "demo-user-policy"
+  user = aws_iam_user.this.name
 
-variable "region" {
-  default = "ap-south-1"
-}
-
-variable "tags" {
-  type = list
-  default = ["firstec2","secondec2"]
-}
-
-variable "ami" {
-  type = map
-  default = {
-    "us-east-1" = "ami-0323c3dd2da7fb37d"
-    "us-west-2" = "ami-0d6621c01e8c2de2c"
-    "ap-south-1" = "ami-0470e33cd681b2476"
-  }
-}
-
-resource "aws_key_pair" "loginkey" {
-  key_name   = "login-key"
-  public_key = file("${path.module}/id_rsa.pub")
-}
-
-resource "aws_instance" "app-dev" {
-   ami = lookup(var.ami,var.region)
-   instance_type = "t2.micro"
-   key_name = aws_key_pair.loginkey.key_name
-   count = 2
-
-   tags = {
-     Name = element(var.tags,count.index)
-   }
-}
-
-
-output "timestamp" {
-  value = local.time
+  policy = jsonencode({
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "ec2:*",
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "elasticloadbalancing:*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "cloudwatch:*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "autoscaling:*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "iam:CreateServiceLinkedRole",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "iam:AWSServiceName": [
+                        "autoscaling.amazonaws.com",
+                        "ec2scheduled.amazonaws.com",
+                        "elasticloadbalancing.amazonaws.com",
+                        "spot.amazonaws.com",
+                        "spotfleet.amazonaws.com",
+                        "transitgateway.amazonaws.com"
+                    ]
+                }
+            }
+        }
+    ]
+})
 }
 ```
-### The id_rsa.pub file that we have used within the video
+
+### Final Code of functions.tf
+
 ```sh
-https://github.com/zealvora/terraform-beginner-to-advanced-resource/blob/master/section04/id_rsa.pub
+resource "aws_iam_user" "this" {
+  name = "demo-kplabs-user"
+}
+
+resource "aws_iam_user_policy" "lb_ro" {
+  name = "demo-user-policy"
+  user = aws_iam_user.this.name
+
+  policy = file("./iam-user-policy.json")
+}
+```
+
+###iam-user-policy.json
+
+```sh
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "ec2:*",
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "elasticloadbalancing:*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "cloudwatch:*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "autoscaling:*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "iam:CreateServiceLinkedRole",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "iam:AWSServiceName": [
+                        "autoscaling.amazonaws.com",
+                        "ec2scheduled.amazonaws.com",
+                        "elasticloadbalancing.amazonaws.com",
+                        "spot.amazonaws.com",
+                        "spotfleet.amazonaws.com",
+                        "transitgateway.amazonaws.com"
+                    ]
+                }
+            }
+        }
+    ]
+}
 ```

@@ -1,3 +1,3 @@
 resource "aws_eip" "lb" {
-  vpc      = true
+  domain = "vpc"
 }

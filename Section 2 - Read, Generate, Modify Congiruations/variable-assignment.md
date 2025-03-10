@@ -1,49 +1,24 @@
 
-### Default File used in Demo
+### variable-assignment.tf
 
 ```sh
-provider "aws" {
-  region     = "us-west-2"
-  access_key = "YOUR-ACCESS-KEY"
-  secret_key = "YOUR-SECRET-KEY"
-}
-
 resource "aws_instance" "myec2" {
-   ami = "ami-082b5a644766e0e6f"
+   ami = "ami-0e670eb768a5fc3d4"
    instance_type = "t2.micro
 }
 ```
-### variables.tf
-```sh
-variable "instancetype" {
-  default = "t2.micro"
-}
-```
-### custom.tfvars
-```sh
-instancetype="t2.large"
-```
 
-### terraform.tfvars
-```sh
-instancetype="t2.large"
-```
 
 ### CLI Commands
 
 ```sh
-terraform plan -var="instancetype=t2.small"
-terraform plan -var-file="custom.tfvars"
+terraform plan -var="instance_type=m5.large"
 ```
 
-### Environment Variables:
+### Environment Variables in Windows
 
-### Windows Approach:
+Open the System Properties using following command:
+
 ```sh
-setx TF_VAR_instancetype t2.large
-``` 
-### Linux / MAC Approach
-```sh
-export TF_VAR_instancetype="t2.nano"
-echo $TF_VAR
+sysdm.cpl
 ```
