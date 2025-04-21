@@ -15,7 +15,8 @@ The code mentioned in this document is used in the HashiCorp Certified Terraform
 | 6 | [Converting Hardcoded Values to Variables in Custom Module][PlDf] |
 | 7 | [Improvements in Provider Configuration in Custom Module][PlDg] |
 | 8 | [Module Outputs][PlDh] |
-| 9 | [Implementing Terraform Workspace][PlDi] |
+| 9 | [Multiple Provider Configuration in Modules][PlDh] |
+| 10 | [Implementing Terraform Workspace][PlDi] |
 
 
 
@@ -27,4 +28,5 @@ The code mentioned in this document is used in the HashiCorp Certified Terraform
    [PlDf]: <./variables-custom-module.md>
    [PlDg]: <./provider-custom-module.md>
    [PlDh]: <./module-outputs.md>
+   [PlDi]: <./module-multi-provider.md>
    [PlDi]: <./kplabs-workspace.md>
