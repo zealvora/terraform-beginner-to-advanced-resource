@@ -55,6 +55,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 46 | [Challenges with Count][PlEm] |
 | 47 | [Data Type - SET ][PlEn] |
 | 48 | [for_each in Terraform][PlEo] |
+| 49 | [Data Type - Object][PlEo] |
 
 [PlDa]: <./firewall.md>
 [PlDb]: <./doc-code-changes.md>
@@ -104,3 +105,4 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlEm]: <./challenge-count.md>
 [PlEn]: <./data-type-set.md>
 [PlEo]: <./for_each.md>
+[PlEp]: <./object.md>
