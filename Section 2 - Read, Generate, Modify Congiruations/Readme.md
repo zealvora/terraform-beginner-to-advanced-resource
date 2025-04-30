@@ -53,9 +53,11 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 44 | [LifeCycle Meta-Argument - Prevent Destroy][PlEk] |
 | 45 | [LifeCycle Meta-Argument - Ignore Changes][PlEl] |
 | 46 | [Challenges with Count][PlEm] |
-| 47 | [Data Type - SET ][PlEn] |
-| 48 | [for_each in Terraform][PlEo] |
-| 49 | [Data Type - Object][PlEo] |
+| 47 | [Resource Dependency][PlEn] |
+| 48 | [Implicit vs Explicit Dependencies][PlEo] |
+| 49 | [Data Type - SET ][PlEp] |
+| 50 | [for_each in Terraform][PlEq] |
+| 51 | [Data Type - Object][PlEr] |
 
 [PlDa]: <./firewall.md>
 [PlDb]: <./doc-code-changes.md>
@@ -103,6 +105,8 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlEk]: <./prevent-destroy.md>
 [PlEl]: <./ignore-changes.md>
 [PlEm]: <./challenge-count.md>
-[PlEn]: <./data-type-set.md>
-[PlEo]: <./for_each.md>
-[PlEp]: <./object.md>
+[PlEn]: <./resource-dependency.md>
+[PlEo]: <./implicit.md>
+[PlEp]: <./data-type-set.md>
+[PlEq]: <./for_each.md>
+[PlEr]: <./object.md>
