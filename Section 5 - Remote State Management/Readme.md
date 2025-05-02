@@ -15,7 +15,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 5 | [Terraform Backends][PlDe] |
 | 6 | [State Locking][PlDf] |
 | 7 | [S3 Backend][PlDg] |
-| 8 | [Terraform State Management][PlDhh] | |
+| 8 | [Terraform State Management][PlDh] | |
 | 9 | [Remote State Data Source Practical][PlDi]
 | 10 | [Terraform Import Practical][PlDj]
 
