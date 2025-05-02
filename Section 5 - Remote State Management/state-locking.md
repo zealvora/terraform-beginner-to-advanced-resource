@@ -1,3 +1,6 @@
+### Documentation Referenced:
+
+https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/sleep.html
 
 ### Base File Used
 
