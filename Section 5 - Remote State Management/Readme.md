@@ -12,9 +12,9 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 2 | [Security Challenges in Commiting TFState to GIT][PlDb] |
 | 3 | [Module Sources in Terraform][PlDc] |
 | 4 | [Terraform and .gitignore][PlDd] |
-| 5 | [Implementing S3 Backend][PlDe] |
-| 6 | [State Locking][PlDf] |
-| 7 | [Integrating DynamoDB with S3 for state locking][PlDg] |
+| 5 | [Terraform Backends][PlDd] |
+| 6 | [State Locking][PlDe] |
+| 7 | [S3 Backend][PlDf] |
 | 8 | [Terraform State Management][PlDh] | |
 | 9 | [Remote State Data Source Practical][PlDi]
 | 10 | [Terraform Import Practical][PlDj]
@@ -24,9 +24,9 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDb]: <./myrepo>
    [PlDc]: <./demofile.md>
    [PlDd]: <./tf-gitignore.md>
-   [PlDe]: <./remote-backend>
-   [PlDf]: <./sleep.tf>
-   [PlDg]: <./s3-state-lock.tf>
+   [PlDe]: <./backend.md>
+   [PlDf]: <./state-locking.md>
+   [PlDg]: <./s3-backend.md>
    [PlDh]: <./state-management.md>
    [PlDi]: <./remote-state-data-source.md>
    [PlDj]: <./tf-import.md>
