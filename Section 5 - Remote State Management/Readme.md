@@ -12,10 +12,10 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 2 | [Security Challenges in Commiting TFState to GIT][PlDb] |
 | 3 | [Module Sources in Terraform][PlDc] |
 | 4 | [Terraform and .gitignore][PlDd] |
-| 5 | [Terraform Backends][PlDd] |
-| 6 | [State Locking][PlDe] |
-| 7 | [S3 Backend][PlDf] |
-| 8 | [Terraform State Management][PlDh] | |
+| 5 | [Terraform Backends][PlDe] |
+| 6 | [State Locking][PlDf] |
+| 7 | [S3 Backend][PlDg] |
+| 8 | [Terraform State Management][PlDhh] | |
 | 9 | [Remote State Data Source Practical][PlDi]
 | 10 | [Terraform Import Practical][PlDj]
 
