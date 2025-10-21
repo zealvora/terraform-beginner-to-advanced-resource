@@ -1,5 +1,5 @@
 
-### Base Code for Creating RDS in AWS
+### 1 - Base Code for Creating RDS in AWS
 
 ```sh
 resource "aws_db_instance" "default" {
@@ -22,7 +22,7 @@ Verify State file for Plain Text Password
 terraform destroy -auto-approve
 ```
 
-### Using File Function
+### 2 - Using File Function
 Create a file on path of `outside-folder/pass.txt` with following content.
 ```sh
 foobarbaz#321

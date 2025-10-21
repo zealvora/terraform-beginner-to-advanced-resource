@@ -10,21 +10,19 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | ------ | ------ |
 | 1 | [Git for Team Collaboration][PlDa] |
 | 2 | [Security Risks of Storing Terraform State File in Git][PlDb] |
-| 3 | [Terraform and .gitignore][PlDc] |
-| 4 | [Terraform Backends][PlDd] |
-| 5 | [State Locking][PlDe] |
-| 6 | [S3 Backend][PlDf] |
-| 7 | [Terraform State Management][PlDg] | |
-| 8 | [Remote State Data Source Practical][PlDh]
-| 9 | [Terraform Import Practical][PlDi]
+| 3 | [Terraform Backends][PlDc] |
+| 4 | [State Locking][PlDd] |
+| 5 | [S3 Backend][PlDe] |
+| 6 | [Terraform State Management][PlDf] | |
+| 7 | [Remote State Data Source Practical][PlDg]
+| 8 | [Terraform Import Practical][PlDh]
 
 
    [PlDa]: <./team-collaboration.md>   
    [PlDb]: <./risks-state-file-git.md>
-   [PlDc]: <./tf-gitignore.md>
-   [PlDd]: <./backend.md>
-   [PlDe]: <./state-locking.md>
-   [PlDf]: <./s3-backend.md>
-   [PlDg]: <./state-management.md>
-   [PlDh]: <./remote-state-data-source.md>
-   [PlDi]: <./tf-import.md>
+   [PlDc]: <./backend.md>
+   [PlDd]: <./state-locking.md>
+   [PlDe]: <./s3-backend.md>
+   [PlDf]: <./state-management.md>
+   [PlDg]: <./remote-state-data-source.md>
+   [PlDh]: <./tf-import.md>
