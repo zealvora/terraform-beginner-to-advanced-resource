@@ -8,20 +8,18 @@ The code mentioned in this document is used in the HashiCorp Certified Terraform
 | Sr No | Document Link |
 | ------ | ------ |
 | 1 | [Creating EC2 instance using Modules][PlDa] |
-| 2 | [Points to Note - Referencing Modules][PlDb] |
-| 3 | [Creating Custom Module for EC2][PlDc] |
-| 4 | [Module Sources - Calling a Module][PlDd] |
-| 5 | [Using Local Paths to Call Custom Module][PlDe] |
-| 6 | [Converting Hardcoded Values to Variables in Custom Module][PlDf] |
-| 7 | [Improvements in Provider Configuration in Custom Module][PlDg] |
-| 8 | [Module Outputs][PlDh] |
-| 9 | [Multiple Provider Configuration in Modules][PlDh] |
-| 10 | [Implementing Terraform Workspace][PlDi] |
+| 2 | [Creating Custom Module for EC2][PlDc] |
+| 3 | [Module Sources - Calling a Module][PlDd] |
+| 4 | [Using Local Paths to Call Custom Module][PlDe] |
+| 5 | [Converting Hardcoded Values to Variables in Custom Module][PlDf] |
+| 6 | [Improvements in Provider Configuration in Custom Module][PlDg] |
+| 7 | [Module Outputs][PlDh] |
+| 8 | [Multiple Provider Configuration in Modules][PlDh] |
+| 9 | [Implementing Terraform Workspace][PlDi] |
 
 
 
    [PlDa]: <./ec2-module.md>
-   [PlDb]: <./note-points-modules.md>
    [PlDc]: <./creating-module.md>
    [PlDd]: <./module-sources.md>
    [PlDe]: <./local-paths.md>
