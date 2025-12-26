@@ -86,7 +86,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDs2]: <./fetch-ami-data-source-usecase.md>
 [PlDs3]: <./fetch-ami-data-source-practical.md>
 [PlDt]: <./debugging.md>
-[PlDu]: <./terraform-format.md>
+[PlDu]: <./fmt.md>
 [PlDv]: <./terraform-validate.md>
 [PlDw]: <./load-order.md> 
 [PlDx]: <./dynamic-block.md>
