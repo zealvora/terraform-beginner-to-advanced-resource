@@ -1,4 +1,8 @@
-### before.tf
+### Documentation Referenced in the Video
+
+https://developer.hashicorp.com/terraform/language/expressions/dynamic-blocks
+
+### sg.tf (Base Code)
 
 ```sh
 resource "aws_security_group" "demo_sg" {
@@ -42,42 +46,44 @@ resource "aws_security_group" "demo_sg" {
 
 ```
 
-### dynamic-block.tf
+### Dynamic Block Base Code from Documentation
 
 ```sh
+  dynamic "setting" {
+    for_each = var.settings
+    content {
+      namespace = setting.value["namespace"]
+      name = setting.value["name"]
+      value = setting.value["value"]
+    }
+  }
+```
+### Final File
 
-
-
+```sh
 variable "sg_ports" {
-  type        = list(number)
-  description = "list of ingress ports"
-  default     = [8200, 8201,8300, 9200, 9500]
+  type = list(number)
+  default = [8200,8201,8300,9200,9500]
 }
 
-resource "aws_security_group" "dynamicsg" {
-  name        = "dynamic-sg"
-  description = "Ingress for Vault"
+resource "aws_security_group" "demo_sg" {
+  name        = "sample-sg"
 
   dynamic "ingress" {
     for_each = var.sg_ports
-    iterator = port
     content {
-      from_port   = port.value
-      to_port     = port.value
-      protocol    = "tcp"
-      cidr_blocks = ["0.0.0.0/0"]
-    }
-  }
-
-  dynamic "egress" {
-    for_each = var.sg_ports
-    content {
-      from_port   = egress.value
-      to_port     = egress.value
-      protocol    = "tcp"
-      cidr_blocks = ["0.0.0.0/0"]
+       from_port   = ingress.value
+       to_port     = ingress.value
+       protocol    = "tcp"
+       cidr_blocks = ["0.0.0.0/0"]
     }
   }
 }
+```
+```sh
+terraform plan
 
+terraform apply -auto-approve
+
+terraform destroy -auto-approve
 ```
