@@ -35,7 +35,7 @@ terraform destroy -auto-approve
 ### Final Code Used in Video
 
 ```sh
-ephemeral "random_password" "db_password" {
+reource "ephemeral.random_password" "db_password" {
   length           = 16
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
