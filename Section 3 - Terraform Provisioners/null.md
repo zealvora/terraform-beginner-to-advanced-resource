@@ -32,7 +32,7 @@ provider "aws" {
 
 resource "aws_eip" "lb" {
   vpc      = true
-  count = 0
+  count = 1
 }
 
 
